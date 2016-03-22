@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "surge --project dist/ --domain barmatcher.surge.sh"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "eslint-config-airbnb": "^6.1.0",
     "eslint-plugin-react": "^4.2.3",
     "file-loader": "^0.8.5",
+    "surge": "^0.17.7",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
