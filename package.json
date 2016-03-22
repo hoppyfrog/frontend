@@ -9,7 +9,7 @@
     "posttest": "npm run lint",
     "lint": "eslint ./",
     "build": "webpack",
-    "deploy": "surge --project dist/ --domain barmatcher.surge.sh"
+    "deploy": "npm run test && npm run build && surge --project dist/ --domain barmatcher.surge.sh"
   },
   "repository": {
     "type": "git",
