@@ -1,10 +1,10 @@
 import path from 'path';
 
-export const entry = './main.js';
+export const entry = './index.js';
 
 export const output = {
   path: path.join(__dirname, 'dist'),
-  filename: 'index.js',
+  filename: 'bundle.js',
 };
 
 export const devServer = {
