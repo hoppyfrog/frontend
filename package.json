@@ -6,6 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "test": "mocha --compilers js:babel-register --recursive",
+    "posttest": "npm run lint",
+    "lint": "eslint ./",
     "build": "webpack",
     "deploy": "surge --project dist/ --domain barmatcher.surge.sh"
   },
