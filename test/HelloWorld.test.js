@@ -1,5 +1,5 @@
 import React from 'react';
-import expect from 'expect.js';
+import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import { shallow } from 'enzyme';
 import HelloWorld from '../components/HelloWorld';
