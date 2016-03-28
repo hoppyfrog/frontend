@@ -1,5 +1,13 @@
 import React from 'react';
-import HelloWorld from './components/HelloWorld';
+import Relay from 'react-relay';
+import VenueApp from './containers/VenueApp';
+import AppRoute from './routes/AppRoute';
 
-const App = () => <HelloWorld />;
+const App = () => (
+  <Relay.RootContainer
+    Component={VenueApp}
+    route={new AppRoute}
+    forceFetch
+  />
+);
 export default App;
